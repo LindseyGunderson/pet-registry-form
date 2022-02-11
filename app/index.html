@@ -20,13 +20,18 @@
 </head>
 <body>
 
+    <!-- Navigation bar -->
     <header class="d-flex flex-row justify-content-around align-items-center primary-header">
+        
+        <!-- Navigation bar logo -->
         <div class="logo">
             <a href="" class="d-flex flex-row">
                 <img src="images/paw-logo.svg" alt="" style="width: 30px;">
                 <h1 class="fs-500 p-2">DocuPet</h1>
             </a>
         </div>
+
+        <!-- Navigation bar links -->
         <nav>
             <ul class="primary-navigation">
                 <li>
@@ -37,72 +42,161 @@
     </header>
 
 
-    <main class="container-fluid d-flex flex-row justify-content-around align-items-center main-container">
+    <!-- Main container for all elements -->
+    <main class="container-fluid d-flex flex-row justify-content-evenly align-items-center  flex-wrap w-100 main-container">
 
         <!-- banner image for form -->
-        <div class="registry-banner">
-            <img src="images/pets_banner.svg" alt="" style="width: 200px;">
-            <h2>Tell us about your pet</h2>
+        <div class="d-flex flex-column justify-content-center align-items-center m-2 registry-banner">
+            <img class="img-fluid" src="images/pets_banner.svg">
+            <h2 class="fs-500">  Tell Us About Your Pet</h2>
         </div>
 
         <!-- form container-->
         <div class="registry-form">
 
             <!-- form for user inputs -->
-            <form action="">
+            <form class= "form-inline" role ="form" action="">
 
                 <!-- pet name input -->
-                <div>
-                    <p>What's your pet's name?</p>
-                    <input type="text">
+                <div class="flex-column input-group">
+                    <p>1. What's your pet's name?</p>
+                    <input class="input-group-text" type="text" placeholder="Enter your dog's name">
                 </div>
 
                 <!-- pet type input -->
                 <div>
-                    <p>What type of pet are they?</p>
-                    <input type="radio" name="" id="">
-                    <label for=""> Cat</label>
-
-                    <input type="radio" name="" id="">
-                    <label for=""> Dog</label>
+                    <p>2. What type of pet are they?</p>
+                    <div
+                    class="btn-group pet-type-selection"
+                    role="group"
+                    aria-label="Pet Type Toggle"
+                  >
+                    <input
+                      type="radio"
+                      class="btn-check pet-type-input"
+                      name="cat"
+                      id="catType"
+                    />
+                    <label class="btn pet-type-input-label" for="catType"> Cat </label>
+          
+                    <input
+                      type="radio"
+                      class="btn-check pet-type-input"
+                      name="dog"
+                      id="dogType"
+                    />
+                    <label class="btn pet-type-input-label" for="dogType"> Dog</label>
+                  </div>
                 </div>
 
                 <!-- breed input -->
                 <div>
-                    <p>What breed are they?</p>
-                   <input type="text" name="" id="" placeholder="Type to search for breed">
+                    <p>3. What breed are they?</p>
+                    <div class="search-wrapper">
+                        <!-- user input field -->
+                        <input
+                          class="form-control"
+                          list="breedOptions"
+                          id="searchInput"
+                          placeholder="Type to search for a breed"
+                        />
+              
+                        <!-- datalist populated dynamically  -->
+                        <datalist id="breedOptions"> </datalist>
+                      </div>
                 </div>
 
                 <!-- breed input continued -->
                 <div>
-                    <p>Choose one:</p>
-                    <input type="radio" name="" id="">
-                    <label for=""> I don't know</label>
-
-                    <input type="radio" name="" id="">
-                    <label for=""> It's a mix</label>
-                </div>               
+                    <p>Can't find the breed? Choose one:</p>
+                    <!-- I don't know input -->
+        <div class="form-check breed-form">
+            <input
+              class="form-check-input breed-input"
+              type="radio"
+              name="breed"
+              id="noBreedRadioBtn"
+            />
+            <label class="form-check-label" for="noBreedRadioBtn">
+              I don't know
+            </label>
+          </div>
+  
+          <!-- Mixed breed input -->
+          <div class="form-check breed-form">
+            <input
+              class="form-check-input breed-input"
+              type="radio"
+              name="breed"
+              id="mixedBreedRadioBtn"
+            />
+            <label
+              class="form-check-label breed-input-label"
+              for="mixedBreedRadioBtn"
+            >
+              It's a mix
+            </label>
+  
+            <!-- textbox for breed input -->
+            <div class="input-group">
+              <input
+                class="input-group-text mixed-breed-input"
+                type="text"
+                name="mixed breed input "
+                placeholder="Ex. poodle, retriever"
+                id="mixedBreedTextbox"
+              />
+            </div>
+          </div>
+             
             
-                <!-- mixed breed input -->
-                <div>
-                    <input type="text" name="" id="" placeholder="Ex. poodle, retriever">
-                </div>
+            <!-- textbox for breed input -->
+          <div class="input-group">
+            <input
+              class="input-group-text mixed-breed-input"
+              type="text"
+              name="mixed breed"
+              placeholder="Ex. poodle, retriever"
+              id="mixedBreedTextbox"
+            />
+          </div>
+    </div>        <!-- end of breed form -->
 
                 <!-- gender input -->
                 <div>
-                    <p>What type of pet are they?</p>
-                    <input type="radio" name="" id="">
-                    <label for=""> Female </label>
+                    <p>4. What gender gender are they?</p>
+                    <div
+          class="btn-group gender-selection"
+          role="group"
+          aria-label="Basic radio toggle button group"
+        >
+          <input
+            type="radio"
+            class="btn-check gender-input"
+            name="female option"
+            id="genderFemale"
+            autocomplete="off"
+          />
+          <label class="btn gender-input-label" for="genderFemale"> Female </label>
 
-                    <input type="radio" name="" id="">
-                    <label for=""> Male</label>
+          <input
+            type="radio"
+            class="btn-check gender-input"
+            name="male option"
+            id="genderMale"
+            autocomplete="off"
+          />
+          <label class="btn gender-input-label" for="genderMale"> Male</label>
+        </div>
                 </div>
 
             </form>
             
-            <div>
+            <div class="d-flex justify-content-center align-items-center gap-2 mx-auto m-4">
+
                 <button class="btn action-btn-outline">Save & Finish Later</button>
                 <button class="btn action-btn-filled">Save Pet</button>
+
             </div>
 
         </div>

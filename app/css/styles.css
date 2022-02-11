@@ -199,12 +199,118 @@ select {
 
 .main-container {
 
-    width: 100%;
+    margin-top: 4rem;
     max-width: 80em;
+    
+}
 
+.registry-form form div {
+
+    margin: 0.5rem 0;
+
+}
+
+.registry-form form div p {
+
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: 14px;
+    color: hsl(var(--clr-dark-grey));
+}
+
+form {
+
+    border: 1px solid #ccc;
+    padding: 2rem 4rem;
+    border-radius: 5px;
 }
 
 /* ----------------------------- */
 /* customizing html element     */
 /* ----------------------------- */
 
+
+/* ----------------------------- */
+/* Pet Type                      */
+/* ----------------------------- */
+.pet-type-selection label {
+
+    width: 125px;
+}
+
+.pet-type-input-label {
+
+    
+    color: hsl(var(--clr-primary-dark-blue));
+    background: hsl(var(--clr-primary-white));
+    border-color: hsl(var(--clr-primary-dark-blue));
+}
+
+.pet-type-input:checked + .pet-type-input-label {
+
+    color: #fff;
+    background: hsl(var(--clr-accent-blue));
+    border-color: hsl(var(--clr-accent-blue));
+}
+
+.pet-type-input:hover + .pet-type-input-label{
+
+    color: #fff;
+    background: hsl(var(--clr-accent-blue));
+    border-color: hsl(var(--clr-accent-blue));
+}
+
+/* ----------------------------- */
+/* Breed selection               */
+/* ----------------------------- */
+
+/* breed selection before checked */
+.breed-input {
+
+    background-color: #d0d0d0;
+    border: 1px solid #d0d0d0;
+}
+
+/* radio buttons after check */
+.breed-input:checked {
+
+    background-color: hsl(var(--clr-accent-blue));
+    border: 1px solid hsl(var(--clr-accent-blue));
+}
+
+.mixed-breed-input {
+
+    display: none;
+}
+
+
+/* ----------------------------- */
+/* Gender selection              */
+/* ----------------------------- */
+
+.gender-selection label {
+
+    width: 125px;
+}
+
+.gender-input-label {
+
+    
+    color: hsl(var(--clr-primary-dark-blue));
+    background: #fff;
+    border-color: hsl(var(--clr-primary-dark-blue));
+}
+
+.gender-input:checked + .gender-input-label {
+
+    color: #fff;
+    background: hsl(var(--clr-accent-blue));
+    border-color: hsl(var(--clr-accent-blue));
+}
+
+.gender-input:hover + .gender-input-label{
+
+    color: #fff;
+    background: hsl(var(--clr-accent-blue));
+    border-color: hsl(var(--clr-accent-blue));
+}
