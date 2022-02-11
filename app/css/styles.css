@@ -231,6 +231,16 @@ form {
 
 
 /* ----------------------------- */
+/* Registry Banner               */
+/* ----------------------------- */
+
+.registry-banner h2 {
+
+    color: hsl(var(--clr-primary-dark-blue));
+}
+
+
+/* ----------------------------- */
 /* Pet Type                      */
 /* ----------------------------- */
 .pet-type-selection label {
