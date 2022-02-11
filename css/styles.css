@@ -61,6 +61,7 @@ body {
     font-size: var(--fs-400);
     line-height: 1.5;
     min-height: 100vh;
+    width: 100%;
 }
 
 /* adjust images  */
@@ -128,6 +129,7 @@ select {
 /* ----  Navigation bar ---- */
 .primary-header {
 
+    width: 100%;
     height: 65px;
     padding: 0.5rem;
     box-shadow: 0px 1px 15px hsl(var(--clr-primary-dark-blue)  / .3)
@@ -199,10 +201,12 @@ select {
 
 .main-container {
 
-    margin-top: 4rem;
+    margin: 4rem 0;
     max-width: 80em;
+
     
 }
+
 
 .registry-form form div {
 
@@ -218,11 +222,19 @@ select {
     color: hsl(var(--clr-dark-grey));
 }
 
-form {
+.registry-form {
 
     border: 1px solid #ccc;
-    padding: 2rem 4rem;
     border-radius: 5px;
+
+}
+
+form {
+
+    padding: 2rem 4rem;
+    width: inherit;
+    /* max-width: 25em; */
+
 }
 
 /* ----------------------------- */
@@ -233,6 +245,12 @@ form {
 /* ----------------------------- */
 /* Registry Banner               */
 /* ----------------------------- */
+
+.registry-banner img {
+
+    max-height: 400px;
+
+}
 
 .registry-banner h2 {
 
@@ -324,3 +342,7 @@ form {
     background: hsl(var(--clr-accent-blue));
     border-color: hsl(var(--clr-accent-blue));
 }
+
+
+/* media queries */
+/*  540px */

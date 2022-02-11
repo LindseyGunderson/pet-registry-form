@@ -56,14 +56,14 @@
     >
       <!-- banner image for form -->
       <div
-        class="d-flex flex-column justify-content-center align-items-center m-2 registry-banner"
+        class="d-flex flex-column justify-content-center align-items-end m-2 registry-banner"
       >
         <img class="img-fluid" src="images/pets_banner.svg" />
-        <h2 class="fs-500">Tell Us About Your Pet</h2>
+        <h2>Tell Us About Your Pet</h2>
       </div>
 
       <!-- form container-->
-      <div class="registry-form">
+      <div class="registry-form shadow">
         <!-- form for user inputs -->
         <form class="form-inline" role="form" action="">
           <!-- pet name input -->
@@ -72,7 +72,7 @@
             <input
               class="input-group-text"
               type="text"
-              placeholder="Enter your dog's name"
+              placeholder="Enter your pet's name"
             />
           </div>
 
@@ -207,10 +207,11 @@
               >
             </div>
           </div>
+          <hr>
         </form>
 
         <div
-          class="d-flex justify-content-center align-items-center gap-2 mx-auto m-4"
+          class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4"
         >
           <button class="btn action-btn-outline">Save & Finish Later</button>
           <button class="btn action-btn-filled">Save Pet</button>
