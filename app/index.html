@@ -79,6 +79,7 @@
           <!-- pet type input -->
           <div>
             <p>2. What type of pet are they?</p>
+
             <div
               class="btn-group pet-type-selection"
               role="group"
@@ -87,7 +88,7 @@
               <input
                 type="radio"
                 class="btn-check pet-type-input"
-                name="cat"
+                name="typeInputBtn"
                 id="catType"
               />
               <label class="btn pet-type-input-label" for="catType">
@@ -97,7 +98,7 @@
               <input
                 type="radio"
                 class="btn-check pet-type-input"
-                name="dog"
+                name="typeInputBtn"
                 id="dogType"
               />
               <label class="btn pet-type-input-label" for="dogType"> Dog</label>
@@ -188,9 +189,8 @@
               <input
                 type="radio"
                 class="btn-check gender-input"
-                name="female option"
+                name="genderInputbtn"
                 id="genderFemale"
-                autocomplete="off"
               />
               <label class="btn gender-input-label" for="genderFemale">
                 Female
@@ -199,9 +199,8 @@
               <input
                 type="radio"
                 class="btn-check gender-input"
-                name="male option"
+                name="genderInputbtn"
                 id="genderMale"
-                autocomplete="off"
               />
               <label class="btn gender-input-label" for="genderMale">
                 Male</label
@@ -219,6 +218,11 @@
       </div>
     </main>
 
+
+    <!-- import bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="js/breeds.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
