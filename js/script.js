@@ -80,8 +80,6 @@ searchInput.addEventListener("keyup", () => {
             });
       }
     }
-  
-    console.log(userResults);
 
     // Show the results
     showResults(userResults);
@@ -90,9 +88,7 @@ searchInput.addEventListener("keyup", () => {
   function showResults(results) {
     if (!results.length) {
       // searchResults.classList.remove('show');
-      console.log(results);
-      console.log("no results");
-      return (searchResults.innerHTML = `<option value="Can't Find it?">`);
+      
     }
   
     // take the breed list results

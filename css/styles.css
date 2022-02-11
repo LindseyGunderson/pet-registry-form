@@ -204,8 +204,6 @@ select {
     margin: 4rem auto;
     width: 100%;
     max-width: 80em;
-
-    
 }
 
 
@@ -214,6 +212,7 @@ select {
     margin: 0.5rem 0;
 
 }
+
 
 .registry-form form div p {
 
@@ -233,8 +232,8 @@ select {
 form {
 
     padding: 2rem 4rem;
-    width: inherit;
-    /* max-width: 25em; */
+    width: 100%;
+    max-width: 25em;
 
 }
 
@@ -250,12 +249,15 @@ form {
 .registry-banner img {
 
     max-height: 400px;
+    margin-bottom: 1rem;
 
 }
 
 .registry-banner h2 {
 
     color: hsl(var(--clr-primary-dark-blue));
+    font-size: var(--fs-500);
+    font-weight: 600;
 }
 
 
@@ -277,14 +279,14 @@ form {
 
 .pet-type-input:checked + .pet-type-input-label {
 
-    color: #fff;
+    color: hsl(var(--clr-primary-white));
     background: hsl(var(--clr-accent-blue));
     border-color: hsl(var(--clr-accent-blue));
 }
 
 .pet-type-input:hover + .pet-type-input-label{
 
-    color: #fff;
+    color: hsl(var(--clr-primary-white));
     background: hsl(var(--clr-accent-blue));
     border-color: hsl(var(--clr-accent-blue));
 }
@@ -326,24 +328,57 @@ form {
 
     
     color: hsl(var(--clr-primary-dark-blue));
-    background: #fff;
+    background: hsl(var(--clr-primary-white));
     border-color: hsl(var(--clr-primary-dark-blue));
 }
 
 .gender-input:checked + .gender-input-label {
 
-    color: #fff;
+    color: hsl(var(--clr-primary-white));
     background: hsl(var(--clr-accent-blue));
     border-color: hsl(var(--clr-accent-blue));
 }
 
 .gender-input:hover + .gender-input-label{
 
-    color: #fff;
+    color: hsl(var(--clr-primary-white));
     background: hsl(var(--clr-accent-blue));
     border-color: hsl(var(--clr-accent-blue));
 }
 
 
 /* media queries */
-/*  540px */
+@media screen and (max-width: 768px){
+
+    .main-container {
+
+        max-width: auto;
+
+    }
+
+    .registry-banner {
+
+        width: 100%;
+
+    }
+
+    form {
+
+        padding: 2rem 2rem;
+        width: 90%;
+        margin: auto;
+    }
+
+    .registry-banner h2 {
+
+        font-size: var(--fs-400);
+    }
+
+    .registry-banner img {
+
+        max-height: 250px;
+    }
+
+
+
+}

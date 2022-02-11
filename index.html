@@ -52,25 +52,25 @@
 
     <!-- Main container for all elements -->
     <main
-      class="container-fluid d-flex flex-row justify-content-evenly align-items-center flex-wrap w-100 main-container"
+      class="container-fluid d-flex flex-row justify-content-evenly align-items-center flex-wrap main-container"
     >
       <!-- banner image for form -->
       <div
-        class="d-flex flex-column justify-content-center align-items-end m-2 registry-banner"
+        class="d-flex flex-column justify-content-center align-items-center m-2 registry-banner"
       >
         <img class="img-fluid" src="images/pets_banner.svg" />
         <h2>Tell Us About Your Pet</h2>
       </div>
 
       <!-- form container-->
-      <div class="registry-form shadow">
+      <div class="d-flex flex-column justify-content-center align-items-center registry-form shadow">
         <!-- form for user inputs -->
-        <form class="form-inline" role="form" action="">
+        <form role="form" action="#" method="post">
           <!-- pet name input -->
-          <div class="flex-column input-group">
+          <div class="input-group">
             <p>1. What's your pet's name?</p>
             <input
-              class="input-group-text"
+              class="input-group-text required"
               type="text"
               placeholder="Enter your pet's name"
             />
@@ -90,6 +90,7 @@
                 class="btn-check pet-type-input"
                 name="typeInputBtn"
                 id="catType"
+                checked
               />
               <label class="btn pet-type-input-label" for="catType">
                 Cat
@@ -111,7 +112,7 @@
             <div class="search-wrapper">
               <!-- user input field -->
               <input
-                class="form-control"
+                class="form-control required"
                 list="breedOptions"
                 id="searchInput"
                 placeholder="Type to search for a breed"
@@ -168,7 +169,7 @@
             <!-- textbox for breed input -->
             <div class="input-group">
               <input
-                class="input-group-text mixed-breed-input"
+                class="input-group-text mixed-breed-input required"
                 type="text"
                 name="mixed breed"
                 placeholder="Ex. poodle, retriever"
@@ -191,6 +192,7 @@
                 class="btn-check gender-input"
                 name="genderInputbtn"
                 id="genderFemale"
+                checked
               />
               <label class="btn gender-input-label" for="genderFemale">
                 Female
@@ -207,14 +209,14 @@
               >
             </div>
           </div>
-          <hr>
+          <!-- <hr> -->
         </form>
 
         <div
           class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4"
         >
           <button class="btn action-btn-outline">Save & Finish Later</button>
-          <button class="btn action-btn-filled">Save Pet</button>
+          <button class="btn action-btn-filled" disabled>Save Pet</button>
         </div>
       </div>
     </main>

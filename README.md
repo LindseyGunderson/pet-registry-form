@@ -32,7 +32,10 @@ File Structure:
         - Once the user has selected a pet type, the eventlistener will choose the corresponding breed list and filter for the useres input. 
         - The second eventlistener will track the user's input when they are searching for a breed and find the closest match in the breeds list.
         - If the user can not find the breed they are looking for, they can choose "I don't know" or "It's a mix", if "It's a mix" is chosen, an additional textbox will be displayed for the user to manually input the mixed breed.
+- index.html
+    - main page for the application. All custom css and framework styling is added in this folder where the user use to demo.
 
+## GitHub & Live Demo
 <a href="https://github.com/LindseyGunderson/pet-registry-form/"> GitHub Repository </a> | <a href="https://lindseygunderson.github.io/pet-registry-form/" target="_blank"> Live Demo </a> 
 
 
