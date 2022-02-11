@@ -202,6 +202,7 @@ select {
 .main-container {
 
     margin: 4rem auto;
+    width: 100%;
     max-width: 80em;
 
     
