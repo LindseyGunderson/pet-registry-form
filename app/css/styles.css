@@ -1,4 +1,31 @@
+/*  ------------------------ */
+/*  Custom properties        */
+/*  ------------------------ */
 
+:root {
+
+    --clr-primary-dark-blue: 240 100% 9%;
+    --clr-primary-white: 240 0% 97%;
+    --clr-accent-blue: 198 100% 62%;
+    --clr-dark-grey: 0 0% 38%;
+
+
+
+    /* font sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* font families */
+
+    --ff-poppins: 'Poppins', sans-serif;
+
+}
 
 /*  ------------------------ */
 /*  Reset                    */
@@ -30,6 +57,7 @@ p {
 
 body {
 
+    font-family: var(--ff-poppins);
     font-size: var(--fs-400);
     line-height: 1.5;
     min-height: 100vh;
@@ -64,3 +92,119 @@ select {
 
     }
 }
+
+/*  ------------------------ */
+/*  Typography               */
+/*  ------------------------ */
+
+/* text colours */
+.text-dark-accent {
+    color: hsl(var(--clr-primary-dark-blue));
+}
+
+.text-dark {
+    color: hsl(var(--clr-dark-grey));
+}
+.text-accent {
+    color: hsl(var(--clr-accent-blue));
+}
+
+/* font sizes */
+
+.fs-900 { font-size: var(--fs-900); }
+.fs-800 { font-size: var(--fs-800); }
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+.fs-200 { font-size: var(--fs-200); }
+.fs-100 { font-size: var(--fs-100); }
+
+/*  ------------------------ */
+/*  Components               */
+/*  ------------------------ */
+
+/* ----  Navigation bar ---- */
+.primary-header {
+
+    height: 65px;
+    padding: 0.5rem;
+    box-shadow: 0px 1px 15px hsl(var(--clr-primary-dark-blue)  / .3)
+
+}
+
+.primary-header .logo a {
+
+    text-decoration: none;
+
+}
+
+.primary-header .logo a h1 {
+
+    color: hsl(var(--clr-accent-blue));
+    font-weight: 600;
+
+}
+
+
+.primary-navigation {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.primary-navigation a {
+
+    text-decoration: none;
+    color: hsl(var(--clr-dark-grey));
+
+}
+
+.primary-navigation li a:hover {
+
+    color: hsl(var(--clr-accent-blue));
+}
+
+
+/* ----  cta buttons ---- */
+
+.action-btn-filled {
+    
+    background: hsl(var(--clr-primary-dark-blue));
+    border: 1px solid hsl(var(--clr-primary-dark-blue));
+    color: hsl(var(--clr-primary-white));
+}
+
+.action-btn-outline {
+
+    background: hsl(var(--clr-primary-white));
+    border: 1px solid hsl(var(--clr-primary-dark-blue));
+    color: hsl(var(--clr-primary-dark-blue));
+
+}
+
+.action-btn-filled:hover, .action-btn-outline:hover {
+
+    background: hsl(var(--clr-accent-blue));
+    border: 1px solid hsl(var(--clr-accent-blue));
+    color: hsl(var(--clr-primary-white));
+}
+
+
+/* ----------------------------- */
+/* Layout                        */
+/* ----------------------------- */
+
+.main-container {
+
+    width: 100%;
+    max-width: 80em;
+
+}
+
+/* ----------------------------- */
+/* customizing html element     */
+/* ----------------------------- */
+
