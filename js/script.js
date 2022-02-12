@@ -16,7 +16,8 @@ searchInput = searchWrapper.querySelector("#searchInput"),
 searchResults = searchWrapper.querySelector("#breedOptions");
 
 
-
+// get save pet button
+const savePetBtn = document.querySelector("#savePetBtn");
 
 
 /* ----- Breed selection with radio buttons -----
@@ -105,3 +106,36 @@ searchInput.addEventListener("keyup", () => {
     // add the list and show the results
     searchResults.innerHTML = `${breedList}`;
   }
+
+function validateForm() {
+
+  let requiredFields = document.querySelectorAll('.required');
+
+  // console.log(requiredFields);
+
+
+  let isValid = true;
+
+  for(let i = 0; i < requiredFields.length; i++){
+
+    let fields = requiredFields[i];
+
+    console.log(requiredFields[i])
+
+    if(fields.value.trim() === "" || fields.value === null){
+
+      isValid = false;
+
+      break;
+
+    }
+
+  }
+
+  savePetBtn.disabled = !isValid;
+
+}
+
+const form = document.querySelector('form');
+
+form.addEventListener('keyup', validateForm);

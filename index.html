@@ -73,6 +73,7 @@
               class="input-group-text required"
               type="text"
               placeholder="Enter your pet's name"
+              id="petName"
             />
           </div>
 
@@ -169,7 +170,7 @@
             <!-- textbox for breed input -->
             <div class="input-group">
               <input
-                class="input-group-text mixed-breed-input required"
+                class="input-group-text mixed-breed-input"
                 type="text"
                 name="mixed breed"
                 placeholder="Ex. poodle, retriever"
@@ -216,7 +217,7 @@
           class="d-flex flex-wrap justify-content-center align-items-center gap-2 mb-4"
         >
           <button class="btn action-btn-outline">Save & Finish Later</button>
-          <button class="btn action-btn-filled" disabled>Save Pet</button>
+          <button class="btn action-btn-filled" id="savePetBtn">Save Pet</button>
         </div>
       </div>
     </main>
